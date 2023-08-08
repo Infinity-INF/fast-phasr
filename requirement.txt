@@ -1,0 +1,4 @@
+ffmpeg
+librosa
+torch2.0.1+cu118
+genshin
