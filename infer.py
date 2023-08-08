@@ -3,7 +3,7 @@ import torch
 import whisper_ph_asr
 #import genshin
 def infer(model,inferdevice,file):
-    if inferdevice=="自动":
+    if inferdevice=="AUTO":
         devices=torch.cuda.is_available()
         if devices==True:
             print("Use CUDA")
