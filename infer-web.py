@@ -22,7 +22,7 @@ def interface():
                 pro = gr.Dropdown(choices=modellist,value=modellist[0],label="选择处理模型")
                 fresh = gr.Button("刷新")
             with gr.Row():
-                dev = gr.Dropdown(choices=["自动","GPU"],label="选择推理设备",value="自动")
+                dev = gr.Dropdown(choices=["AUTO","GPU"],label="选择推理设备",value="AUTO")
             gr.Markdown("将音频上传至此，注意文件名不要过于复杂，尽量只包含英文，以防未知bug")
             with gr.Row():
                 inputaudio = gr.Audio(type="filepath")
